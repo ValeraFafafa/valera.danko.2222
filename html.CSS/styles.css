@@ -1,0 +1,147 @@
+/* Основные стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background:#ab4848; ;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* styles.css */
+.profile {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-img {
+  width: 200px;        /* Ширина изображения */
+  height: 200px;       /* Высота изображения */
+  border-radius: 30%;  /* Округлые края (круглое изображение) */
+  border: 3px solid #000000;  /* Граница вокруг изображения */
+  object-fit: cover;   /* Обрезка изображения по размеру */
+  margin-bottom: 10px; /* Отступ от изображения */
+} 
+.logo img {
+  max-height: 200px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #444;
+}
+
+section {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: calc(33.333% - 10px);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+
